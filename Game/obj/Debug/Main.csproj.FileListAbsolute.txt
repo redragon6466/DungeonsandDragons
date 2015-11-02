@@ -1,0 +1,11 @@
+D:\Workspace\DNDSim\Game\bin\Debug\Main.dll
+D:\Workspace\DNDSim\Game\bin\Debug\Main.pdb
+D:\Workspace\DNDSim\Game\bin\Debug\Characters.dll
+D:\Workspace\DNDSim\Game\bin\Debug\Items.dll
+D:\Workspace\DNDSim\Game\bin\Debug\Mechanics.dll
+D:\Workspace\DNDSim\Game\bin\Debug\Characters.pdb
+D:\Workspace\DNDSim\Game\bin\Debug\Items.pdb
+D:\Workspace\DNDSim\Game\bin\Debug\Mechanics.pdb
+D:\Workspace\DNDSim\Game\obj\Debug\Main.csprojResolveAssemblyReference.cache
+D:\Workspace\DNDSim\Game\obj\Debug\Main.dll
+D:\Workspace\DNDSim\Game\obj\Debug\Main.pdb

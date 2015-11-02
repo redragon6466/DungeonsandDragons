@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Moq.4.2.1502.0911/lib/net40
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=701
+Moq.dll;2630508667;1;1437509557;|1383|1998
+Moq.xml;705600513;1;1437509557;|1384|1999

@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Prism.Interactivity.5.0.0/lib/NET45
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=711
+Microsoft.Practices.Prism.Interactivity.dll;366139134;1;1437509558;|1394|2009
+Microsoft.Practices.Prism.Interactivity.xml;3746012633;1;1437509558;|1395|2010

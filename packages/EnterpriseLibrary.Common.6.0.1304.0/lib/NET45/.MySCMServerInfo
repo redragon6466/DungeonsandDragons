@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/EnterpriseLibrary.Common.6.0.1304.0/lib/NET45
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=679
+Microsoft.Practices.EnterpriseLibrary.Common.dll;1092940393;1;1437509551;|1369|1984
+Microsoft.Practices.EnterpriseLibrary.Common.xml;1928903871;1;1437509551;|1370|1985

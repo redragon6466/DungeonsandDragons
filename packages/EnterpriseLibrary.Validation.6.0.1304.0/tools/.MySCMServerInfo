@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/EnterpriseLibrary.Validation.6.0.1304.0/tools
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=684
+install.ps1;1383369709;1;1437509551;|1378|1993
+Utils.psm1;2079811590;1;1437509551;|1377|1992

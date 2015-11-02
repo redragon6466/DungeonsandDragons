@@ -1,0 +1,5 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Prism.PubSubEvents.1.1.2/lib/portable-sl5+windowsphone8+windows8+net40+wpa81
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=723
+Microsoft.Practices.Prism.PubSubEvents.dll;3784214528;1;1437509558;|1421|2036

@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/log4net.2.0.3/lib/net11-full
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=820
+log4net.dll;2871222616;1;1437509554;|1425|2040
+log4net.xml;3070661724;1;1437509554;|1426|2041

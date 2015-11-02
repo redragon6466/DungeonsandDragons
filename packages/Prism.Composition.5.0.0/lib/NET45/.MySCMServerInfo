@@ -1,0 +1,8 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Prism.Composition.5.0.0/lib/NET45
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=708
+Microsoft.Practices.Prism.Composition.dll;3736991318;1;1437509558;|1389|2004
+Microsoft.Practices.Prism.Composition.xml;1640002665;1;1437509558;|1390|2005
+Microsoft.Practices.Prism.SharedInterfaces.dll;201947197;1;1437509558;|1391|2006
+Microsoft.Practices.Prism.SharedInterfaces.xml;4110499660;1;1437509558;|1392|2007

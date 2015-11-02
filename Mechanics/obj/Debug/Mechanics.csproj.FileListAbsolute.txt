@@ -1,0 +1,5 @@
+D:\Workspace\DNDSim\Mechanics\bin\Debug\Mechanics.dll
+D:\Workspace\DNDSim\Mechanics\bin\Debug\Mechanics.pdb
+D:\Workspace\DNDSim\Mechanics\obj\Debug\Mechanics.csprojResolveAssemblyReference.cache
+D:\Workspace\DNDSim\Mechanics\obj\Debug\Mechanics.dll
+D:\Workspace\DNDSim\Mechanics\obj\Debug\Mechanics.pdb

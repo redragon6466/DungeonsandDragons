@@ -1,0 +1,9 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Prism.Mvvm.1.1.1/lib/wpa81
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=720
+Microsoft.Practices.Prism.Mvvm.dll;1766056453;1;1437509558;|1416|2031
+Microsoft.Practices.Prism.Mvvm.Phone.dll;905310371;1;1437509558;|1415|2030
+Microsoft.Practices.Prism.Mvvm.xml;2893871700;1;1437509558;|1417|2032
+Microsoft.Practices.Prism.SharedInterfaces.dll;2147176942;1;1437509558;|1418|2033
+Microsoft.Practices.Prism.SharedInterfaces.xml;4110499660;1;1437509558;|1419|2034

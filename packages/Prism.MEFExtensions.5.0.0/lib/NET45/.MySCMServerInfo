@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Prism.MEFExtensions.5.0.0/lib/NET45
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=714
+Microsoft.Practices.Prism.MefExtensions.dll;4054429751;1;1437509558;|1397|2012
+Microsoft.Practices.Prism.MefExtensions.xml;2913407060;1;1437509558;|1398|2013

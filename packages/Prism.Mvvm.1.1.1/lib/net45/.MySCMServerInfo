@@ -1,0 +1,9 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Prism.Mvvm.1.1.1/lib/net45
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=717
+Microsoft.Practices.Prism.Mvvm.Desktop.dll;2556129304;1;1437509558;|1401|2016
+Microsoft.Practices.Prism.Mvvm.dll;1766056453;1;1437509558;|1402|2017
+Microsoft.Practices.Prism.Mvvm.xml;2893871700;1;1437509558;|1403|2018
+Microsoft.Practices.Prism.SharedInterfaces.dll;2147176942;1;1437509558;|1404|2019
+Microsoft.Practices.Prism.SharedInterfaces.xml;4110499660;1;1437509558;|1405|2020

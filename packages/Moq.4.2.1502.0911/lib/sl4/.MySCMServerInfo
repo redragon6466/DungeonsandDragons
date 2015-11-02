@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Moq.4.2.1502.0911/lib/sl4
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=702
+Moq.Silverlight.dll;2443258051;1;1437509557;|1385|2000
+Moq.Silverlight.xml;2222014087;1;1437509558;|1386|2001

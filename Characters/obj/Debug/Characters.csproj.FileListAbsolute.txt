@@ -1,0 +1,9 @@
+D:\Workspace\DNDSim\Characters\bin\Debug\Characters.dll
+D:\Workspace\DNDSim\Characters\bin\Debug\Characters.pdb
+D:\Workspace\DNDSim\Characters\obj\Debug\Characters.csprojResolveAssemblyReference.cache
+D:\Workspace\DNDSim\Characters\obj\Debug\Characters.dll
+D:\Workspace\DNDSim\Characters\obj\Debug\Characters.pdb
+D:\Workspace\DNDSim\Characters\bin\Debug\Mechanics.dll
+D:\Workspace\DNDSim\Characters\bin\Debug\Mechanics.pdb
+D:\Workspace\DNDSim\Characters\bin\Debug\Items.dll
+D:\Workspace\DNDSim\Characters\bin\Debug\Items.pdb

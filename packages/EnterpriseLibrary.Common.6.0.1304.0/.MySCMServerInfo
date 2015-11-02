@@ -1,0 +1,7 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/EnterpriseLibrary.Common.6.0.1304.0
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=677
+EnterpriseLibrary.Common.6.0.1304.0.nupkg;1907605453;1;1437509551;|1366|1981
+EnterpriseLibrary.Configuration.xsd;2783638027;1;1437509551;|1367|1982
+Update-EntlibConfiguration.ps1;602832241;1;1437509551;|1368|1983

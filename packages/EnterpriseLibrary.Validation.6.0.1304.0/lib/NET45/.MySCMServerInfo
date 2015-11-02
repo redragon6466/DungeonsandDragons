@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/EnterpriseLibrary.Validation.6.0.1304.0/lib/NET45
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=683
+Microsoft.Practices.EnterpriseLibrary.Validation.dll;541715731;1;1437509551;|1375|1990
+Microsoft.Practices.EnterpriseLibrary.Validation.xml;640277053;1;1437509551;|1376|1991

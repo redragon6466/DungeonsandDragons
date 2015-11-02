@@ -1,0 +1,9 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/Prism.Mvvm.1.1.1/lib/windows8
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=719
+Microsoft.Practices.Prism.Mvvm.dll;1766056453;1;1437509558;|1411|2026
+Microsoft.Practices.Prism.Mvvm.Store.dll;1383201645;1;1437509558;|1410|2025
+Microsoft.Practices.Prism.Mvvm.xml;2893871700;1;1437509558;|1412|2027
+Microsoft.Practices.Prism.SharedInterfaces.dll;2147176942;1;1437509558;|1413|2028
+Microsoft.Practices.Prism.SharedInterfaces.xml;4110499660;1;1437509558;|1414|2029

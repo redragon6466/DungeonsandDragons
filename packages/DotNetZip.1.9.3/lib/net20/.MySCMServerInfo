@@ -1,0 +1,6 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/DotNetZip.1.9.3/lib/net20
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=676
+Ionic.Zip.dll;3469852760;1;1437509551;|1364|1979
+Ionic.Zip.xml;907541430;1;1437509551;|1365|1980

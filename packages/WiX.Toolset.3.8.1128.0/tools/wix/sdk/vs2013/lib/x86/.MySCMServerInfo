@@ -1,0 +1,4 @@
+SCMBranch=Simulator
+SCMRepository=Simulator/Source/Simulator/packages/WiX.Toolset.3.8.1128.0/tools/wix/sdk/vs2013/lib/x86
+SCMMainlineUUID={82207fdf-6735-42db-bd93-17b1969eb8b6}
+SCMBranchRepositoryID=813
