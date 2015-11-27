@@ -3,3 +3,8 @@ D:\Workspace\DNDSim\Mechanics\bin\Debug\Mechanics.pdb
 D:\Workspace\DNDSim\Mechanics\obj\Debug\Mechanics.csprojResolveAssemblyReference.cache
 D:\Workspace\DNDSim\Mechanics\obj\Debug\Mechanics.dll
 D:\Workspace\DNDSim\Mechanics\obj\Debug\Mechanics.pdb
+C:\Users\mattf_000\Documents\DungeonsandDragons\Mechanics\bin\Debug\Mechanics.dll
+C:\Users\mattf_000\Documents\DungeonsandDragons\Mechanics\bin\Debug\Mechanics.pdb
+C:\Users\mattf_000\Documents\DungeonsandDragons\Mechanics\obj\Debug\Mechanics.csprojResolveAssemblyReference.cache
+C:\Users\mattf_000\Documents\DungeonsandDragons\Mechanics\obj\Debug\Mechanics.dll
+C:\Users\mattf_000\Documents\DungeonsandDragons\Mechanics\obj\Debug\Mechanics.pdb

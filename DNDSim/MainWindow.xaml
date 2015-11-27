@@ -22,29 +22,9 @@
             <ColumnDefinition
                 Width="*"/>
         </Grid.ColumnDefinitions>
-        <ListView 
-            Grid.Row="1"
-            MinWidth="100">
-            <Label 
-                Content="Actions" 
-                FontSize="14"
-                HorizontalAlignment="Center"/>
-            <Button 
-                Content="Attack"
-                Command="{Binding AttackCommand}"/>
-            <Button 
-                Content="Full Attack"
-                Command="{Binding FullRoundAttackCommand}"/>
-            <Button
-                Content="End Turn"
-                Command="{Binding EndTurnCommand}" 
-                Visibility="Visible"/>
-            <Button
-                Content="Back"
-                Command="{Binding Back}" 
-                Visibility="Hidden"
-                />
-        </ListView>
+       <ContentControl
+           Content="{Binding GetSection}"
+           Grid.Row="1"/>
         <RichTextBox
             Name="OutputWindow"
             MinWidth="200"

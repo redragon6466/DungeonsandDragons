@@ -10,6 +10,7 @@ using DNDSim.Characters;
 using DNDSim.Characters.EventArgs;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
+using System.Windows;
 
 namespace DNDSim.UI.ViewModel
 {
@@ -26,6 +27,10 @@ namespace DNDSim.UI.ViewModel
         private  Game _game;
 
         private Character _selectedCharacter;
+
+        private Visibility _fullAttackVisibility;
+
+        private MenuStateEnum _menuState;
 
         public MainWindowViewModel()
         {
@@ -124,6 +129,28 @@ namespace DNDSim.UI.ViewModel
         }
         #endregion
 
+        #region Item Button
+        public DelegateCommand ItemCommand { get; internal set; }
+
+        private bool CanExecuteItem()
+        {
+            return true;
+        }
+
+        private void CreateItem()
+        {
+            ItemCommand = new DelegateCommand(ItemExecute, CanExecuteItem);
+        }
+
+        public void ItemExecute()
+        {
+            /*
+            FullAttackVisibility = Visibility.Hidden;
+            */
+
+        }
+        #endregion
+
         public void MessageHandler(object sender, MessageEventArgs args)
         {
             WriteToOutputString(args.Message);
@@ -148,6 +175,7 @@ namespace DNDSim.UI.ViewModel
             CreateAttack();
             CreateFullRoundAttack();
             CreateEndTurn();
+            CreateItem();
         }
 
         public ObservableCollection<Character> CharactersList
@@ -171,5 +199,35 @@ namespace DNDSim.UI.ViewModel
             }
         }
 
+        public MenuStateEnum MenuState
+        {
+            get
+            {
+                return _menuState;
+            }
+
+            set
+            {
+                _menuState = value;
+            }
+        }
+        /*
+        public ViewModelBase GetSection
+        {
+            get
+            {
+                switch (MenuState)
+                {
+                    case MenuStateEnum.Combat:
+                        break;
+                    case MenuStateEnum.Items:
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        
+        */
     }
 }

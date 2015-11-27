@@ -9,3 +9,14 @@ D:\Workspace\DNDSim\Game\bin\Debug\Mechanics.pdb
 D:\Workspace\DNDSim\Game\obj\Debug\Main.csprojResolveAssemblyReference.cache
 D:\Workspace\DNDSim\Game\obj\Debug\Main.dll
 D:\Workspace\DNDSim\Game\obj\Debug\Main.pdb
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\bin\Debug\Main.dll
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\bin\Debug\Main.pdb
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\bin\Debug\Characters.dll
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\bin\Debug\Items.dll
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\bin\Debug\Mechanics.dll
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\bin\Debug\Characters.pdb
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\bin\Debug\Items.pdb
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\bin\Debug\Mechanics.pdb
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\obj\Debug\Main.csprojResolveAssemblyReference.cache
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\obj\Debug\Main.dll
+C:\Users\mattf_000\Documents\DungeonsandDragons\Game\obj\Debug\Main.pdb

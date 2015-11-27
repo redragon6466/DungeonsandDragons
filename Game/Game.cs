@@ -28,8 +28,11 @@ namespace DNDSim.Main
             _player.CharacterMessage += MessageHandler;
             _nonPlayerCharactersInInstanceList = new ObservableCollection<Character>();
             Character enemy = new Character("test enemy");
+            Character fritz = new Character("fritz");
             enemy.CharacterMessage += MessageHandler;
+            fritz.CharacterMessage += MessageHandler;
             _nonPlayerCharactersInInstanceList.Add(enemy);
+            _nonPlayerCharactersInInstanceList.Add(fritz);
             _player.MyTurn();
         }
 
