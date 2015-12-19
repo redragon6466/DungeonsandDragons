@@ -34,9 +34,11 @@ namespace DNDSim.UI.ViewModel
 
         private CombatSectionViewModel _combatSectionViewModel;
 
+        private MenuStateEnum _previousState;
+
         public MainWindowViewModel()
         {
-            StartButtons();
+           
             _game = new Game();
             _game.Message += MessageHandler;
             _menuState = MenuStateEnum.Combat;
@@ -63,6 +65,50 @@ namespace DNDSim.UI.ViewModel
         public void MessageHandler(object sender, MessageEventArgs args)
         {
             WriteToOutputString(args.Message);
+        }
+
+        public void ActionHandler(object sender, PlayerActionEventArgs args)
+        {
+            if (SelectedCharacter == null)
+            {
+                WriteToOutputString("Please Select a target to attack.");
+            }
+            else
+            {
+                _game.PlayerAction(args.Action, SelectedCharacter);
+            }
+
+            switch (args.Action)
+            {
+                case PlayerActionEnum.Attack:
+                    if (SelectedCharacter == null)
+                    {
+                        WriteToOutputString("Please Select a target to attack.");
+                    }
+                    else
+                    {
+                        _game.PlayerAction(args.Action, SelectedCharacter);
+                    }
+                    break;
+                case PlayerActionEnum.FullAttack:
+                    if (SelectedCharacter == null)
+                    {
+                        WriteToOutputString("Please Select a target to attack.");
+                    }
+                    else
+                    {
+                        _game.PlayerAction(args.Action, SelectedCharacter);
+                    }
+                    break;
+                case PlayerActionEnum.EndTurn:
+                    _game.PlayerAction(args.Action, SelectedCharacter);
+                    break;
+                case PlayerActionEnum.DisplayItems:
+                    _previousState = MenuState;
+                    MenuState = MenuStateEnum.Items;
+                    break;
+            }
+
         }
 
         public void WriteToOutputString(string myString)
@@ -136,6 +182,7 @@ namespace DNDSim.UI.ViewModel
                 if (_combatSectionViewModel == null)
                 {
                     _combatSectionViewModel = new CombatSectionViewModel();
+                    _combatSectionViewModel.Action += ActionHandler;
                 }
                 return _combatSectionViewModel;
             }

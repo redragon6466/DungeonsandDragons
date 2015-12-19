@@ -24,15 +24,15 @@ namespace DNDSim.Main
         public void Play()
         {
             _nonPlayerCharactersList = new List<Character>();
-            _player = new Character("test player");
+            _player = new Character("Hero");
             _player.CharacterMessage += MessageHandler;
             _nonPlayerCharactersInInstanceList = new ObservableCollection<Character>();
-            Character enemy = new Character("test enemy");
-            Character fritz = new Character("fritz");
-            enemy.CharacterMessage += MessageHandler;
-            fritz.CharacterMessage += MessageHandler;
-            _nonPlayerCharactersInInstanceList.Add(enemy);
-            _nonPlayerCharactersInInstanceList.Add(fritz);
+            Character bandit = new Character("Bandit");
+            Character banditLeader = new Character("Bandit Leader");
+            bandit.CharacterMessage += MessageHandler;
+            banditLeader.CharacterMessage += MessageHandler;
+            _nonPlayerCharactersInInstanceList.Add(bandit);
+            _nonPlayerCharactersInInstanceList.Add(banditLeader);
             _player.MyTurn();
         }
 
@@ -74,6 +74,9 @@ namespace DNDSim.Main
                     {
                         _player.FullRoundAttack(target);
                     }
+                    break;
+                case PlayerActionEnum.EndTurn:
+                    EndTurn();
                     break;
             }
         }
