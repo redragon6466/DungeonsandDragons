@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Enumerations\MenuStateEnum.cs" />
     <Compile Include="Enumerations\PlayerActionEnum.cs" />
+    <Compile Include="EventArguments\PlayerActionEventArgs.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,9 +60,7 @@
       <Name>Mechanics</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EventArguments\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

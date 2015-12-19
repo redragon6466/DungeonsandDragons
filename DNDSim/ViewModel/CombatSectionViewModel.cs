@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DNDSim.Characters.EventArgs;
+using DNDSim.Main.Enumerations;
 using Microsoft.Practices.Prism.Commands;
 
 namespace DNDSim.UI.ViewModel
@@ -11,7 +13,27 @@ namespace DNDSim.UI.ViewModel
     {
 
 
+        public CombatSectionViewModel()
+        {
+            StartButtons();
+        }
 
+        #region events
+        public event EventHandler<MessageEventArgs> Message = delegate { };
+
+        public void MessageHandler(String msg)
+        {
+            Task.Factory.StartNew(() => Message(this, new MessageEventArgs(msg)));
+        }
+
+        public event EventHandler<PlayerActionEventArgs> Action = delegate { };
+
+        public void ActionHandler(PlayerActionEnum action)
+        {
+            Task.Factory.StartNew(() => Action(this, new PlayerActionEventArgs(action)));
+        }
+
+        #endregion
 
         #region Attack button
         public DelegateCommand AttackCommand { get; internal set; }
@@ -28,14 +50,7 @@ namespace DNDSim.UI.ViewModel
 
         public void AttackExecute()
         {
-            /*
-            if (SelectedCharacter != null)
-            {
-                _game.PlayerAction(PlayerActionEnum.Attack, SelectedCharacter);
-                return;
-            }
-            WriteToOutputString("Select a target");
-            */
+            ActionHandler(PlayerActionEnum.Attack);
         }
         #endregion
 
@@ -54,15 +69,7 @@ namespace DNDSim.UI.ViewModel
 
         public void FullRoundAttackExecute()
         {
-            /*
-            //Character target = SelectTaget();
-            if (SelectedCharacter != null)
-            {
-                _game.PlayerAction(PlayerActionEnum.FullAttack, SelectedCharacter);
-                return;
-            }
-            WriteToOutputString("Select a target");
-            */
+            ActionHandler(PlayerActionEnum.Attack);
         }
         #endregion
 
@@ -81,10 +88,7 @@ namespace DNDSim.UI.ViewModel
 
         public void EndTurnExecute()
         {
-            /*
-            WriteToOutputString("\nYou end your turn.");
-            _game.EndTurn();
-            */
+            ActionHandler(PlayerActionEnum.EndTurn);
         }
         #endregion
 
@@ -103,12 +107,18 @@ namespace DNDSim.UI.ViewModel
 
         public void ItemExecute()
         {
-            /*
-            FullAttackVisibility = Visibility.Hidden;
-            */
+            ActionHandler(PlayerActionEnum.DisplayItems);
 
         }
         #endregion
 
+
+        public void StartButtons()
+        {
+            CreateAttack();
+            CreateFullRoundAttack();
+            CreateEndTurn();
+            CreateItem();
+        }
     }
 }

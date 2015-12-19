@@ -12,8 +12,35 @@
                 Height="Auto"/>
             <RowDefinition
                 Height="Auto"/>
+            <RowDefinition
+                Height="Auto"/>
+            <RowDefinition
+                Height="Auto"/>
+            <RowDefinition
+                Height="Auto"/>
         </Grid.RowDefinitions>  
         <Label
-            Content="Combat"/>
+            Content="Combat"
+            Margin="1, 1, 1, 1"/>
+        <Button
+            Content="Attack"
+            Grid.Row="1"
+            Command="{Binding AttackCommand}"
+            Margin="1, 1, 1, 1"/>
+        <Button
+            Content="Full Attack"
+            Grid.Row="2"
+            Command="{Binding FullAttackCommand}"
+            Margin="1, 1, 1, 1"/>
+        <Button
+            Content="Items"
+            Grid.Row="3"
+            Command="{Binding ItemCommand}"
+            Margin="1, 1, 1, 1"/>
+        <Button
+            Content="End Turn"
+            Grid.Row="4"
+            Command="{Binding EndTurnCommand}"
+            Margin="1, 1, 1, 1"/>
     </Grid>
 </UserControl>

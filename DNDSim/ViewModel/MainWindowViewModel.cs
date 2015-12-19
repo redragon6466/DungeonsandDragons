@@ -32,11 +32,14 @@ namespace DNDSim.UI.ViewModel
 
         private MenuStateEnum _menuState;
 
+        private CombatSectionViewModel _combatSectionViewModel;
+
         public MainWindowViewModel()
         {
             StartButtons();
             _game = new Game();
             _game.Message += MessageHandler;
+            _menuState = MenuStateEnum.Combat;
             _game.Play();
             _outputString = new StringBuilder();
             WriteToOutputString("Hello, Welcome to Dungeons and Dragons");
@@ -57,100 +60,6 @@ namespace DNDSim.UI.ViewModel
         }
     
 
-        #region Attack button
-        public DelegateCommand AttackCommand { get; internal set; }
-
-        private bool CanExecuteAttack()
-        {
-            return true;
-        }
-
-        private void CreateAttack()
-        {
-            AttackCommand = new DelegateCommand(AttackExecute, CanExecuteAttack);
-        }
-
-        public void AttackExecute()
-        {
-            if (SelectedCharacter != null)
-            {
-                _game.PlayerAction(PlayerActionEnum.Attack, SelectedCharacter);
-                return;
-            }
-            WriteToOutputString("Select a target");
-
-        }
-        #endregion
-
-        #region Full Attack Button
-        public DelegateCommand FullRoundAttackCommand { get; internal set; }
-
-        private bool CanExecuteFullRoundAttack()
-        {
-            return true;
-        }
-
-        private void CreateFullRoundAttack()
-        {
-            FullRoundAttackCommand = new DelegateCommand(FullRoundAttackExecute, CanExecuteFullRoundAttack);
-        }
-
-        public void FullRoundAttackExecute()
-        {
-            //Character target = SelectTaget();
-            if (SelectedCharacter!=null)
-            {
-                _game.PlayerAction(PlayerActionEnum.FullAttack, SelectedCharacter);
-                return;
-            }
-            WriteToOutputString("Select a target");
-            
-        }
-        #endregion
-
-        #region End Turn Button
-        public DelegateCommand EndTurnCommand { get; internal set; }
-
-        private bool CanExecuteEndTurn()
-        {
-            return true;
-        }
-
-        private void CreateEndTurn()
-        {
-            EndTurnCommand = new DelegateCommand(EndTurnExecute, CanExecuteEndTurn);
-        }
-
-        public void EndTurnExecute()
-        {
-            WriteToOutputString("\nYou end your turn.");
-            _game.EndTurn();
-            
-        }
-        #endregion
-
-        #region Item Button
-        public DelegateCommand ItemCommand { get; internal set; }
-
-        private bool CanExecuteItem()
-        {
-            return true;
-        }
-
-        private void CreateItem()
-        {
-            ItemCommand = new DelegateCommand(ItemExecute, CanExecuteItem);
-        }
-
-        public void ItemExecute()
-        {
-            /*
-            FullAttackVisibility = Visibility.Hidden;
-            */
-
-        }
-        #endregion
-
         public void MessageHandler(object sender, MessageEventArgs args)
         {
             WriteToOutputString(args.Message);
@@ -168,14 +77,6 @@ namespace DNDSim.UI.ViewModel
                 Debug.WriteLine(e.Message);
             }
             
-        }
-
-        public void StartButtons()
-        {
-            CreateAttack();
-            CreateFullRoundAttack();
-            CreateEndTurn();
-            CreateItem();
         }
 
         public ObservableCollection<Character> CharactersList
@@ -211,7 +112,7 @@ namespace DNDSim.UI.ViewModel
                 _menuState = value;
             }
         }
-        /*
+        
         public ViewModelBase GetSection
         {
             get
@@ -219,15 +120,28 @@ namespace DNDSim.UI.ViewModel
                 switch (MenuState)
                 {
                     case MenuStateEnum.Combat:
-                        break;
+                        return CombatSection;
                     case MenuStateEnum.Items:
-                        break;
+                        return CombatSection;
                     default:
-                        break;
+                        return CombatSection;
                 }
             }
         }
+
+        public CombatSectionViewModel CombatSection
+        {
+            get
+            {
+                if (_combatSectionViewModel == null)
+                {
+                    _combatSectionViewModel = new CombatSectionViewModel();
+                }
+                return _combatSectionViewModel;
+            }
+        }
+
         
-        */
+    
     }
 }

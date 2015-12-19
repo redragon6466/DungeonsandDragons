@@ -92,3 +92,6 @@ C:\Users\mattf_000\Documents\DungeonsandDragons\DNDSim\obj\Debug\DNDSim.Properti
 C:\Users\mattf_000\Documents\DungeonsandDragons\DNDSim\obj\Debug\UI.csproj.GenerateResource.Cache
 C:\Users\mattf_000\Documents\DungeonsandDragons\DNDSim\obj\Debug\View\CombatSectionView.g.cs
 C:\Users\mattf_000\Documents\DungeonsandDragons\DNDSim\obj\Debug\View\CombatSectionView.baml
+D:\Workspace\DNDSim\DNDSim\obj\Debug\View\CombatSectionView.g.cs
+D:\Workspace\DNDSim\DNDSim\obj\Debug\View\CombatSectionView.baml
+D:\Workspace\DNDSim\DNDSim\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -10,5 +10,7 @@ namespace DNDSim.Main.Enumerations
     {
         Attack,
         FullAttack,
+        EndTurn,
+        DisplayItems
     }
 }
